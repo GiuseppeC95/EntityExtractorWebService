@@ -39,12 +39,13 @@ header {
   right:0;
   height: 100vh;
   z-index: 999;
+  margin-right: -100vw;
   //background: #d53941;
   transition: all 0.3s ease-out;
 }
 
 #sidebar.active {
-  margin-right: -100vw;
+  margin-right: -0vw;
 }
 
 #logo{
@@ -273,9 +274,12 @@ header {
     width: auto;
   }
 
-  #sidebar.active {
+  #sidebar {
     margin-right: -50vw;
   }
+  //#sidebar.active {
+  //  margin-right: -50vw;
+  //}
 
 
 

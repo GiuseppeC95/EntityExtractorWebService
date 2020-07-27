@@ -59,15 +59,15 @@
                                 <div class="card-group card-group-scroll d-flex defaultScrollStartup">
 
                                     {% for i in range(25) %}
-                                        <div class="card border-0 px-2 py-0 ">
+                                        <div class="card border-0 px-2 py-0 lessonItem">
                                             <a href="#" class = "position-relative text-white">
                                                 <img class="card-img-top border" src="{{ url_for('static',filename='img/lessonImgPlaceholder.jpg') }}" alt="Immagine Lezione">
                                                 <div class="card-img-overlay  d-flex align-items-end flex-column-reverse p-0 " style="height: inherit">
-                                                    <div class="bg-dark p-1 px-2 rounded"><i class=" fas fa-play text-white"></i> <span class="font-weight-bolder" >25:20</span></div>
+                                                    <div class="bg-dark p-1 px-2 rounded" style="font-size: 0.7rem;" ><i class=" fas fa-play text-white"></i> <span class="font-weight-bolder" >25:20</span></div>
                                                 </div>
 
                                                 <div class="card-img-overlay opacity-0h4  bg-dark d-flex flex-row " style="height: inherit">
-                                                    <div class="align-self-center mx-auto " style="font-size: 4rem; " ><i class="fas fa-play-circle" ></i></div>
+                                                    <div class="align-self-center mx-auto " style="font-size: 1.5rem; " ><i class="fas fa-play-circle" ></i></div>
                                                 </div>
                                             </a>
                                             <div class="card-body px-1 pt-2 pb-0">
@@ -104,7 +104,7 @@
             {#            </button>#}
 
             <div class="d-block">
-                <button type="button" class="close btn p-0 " aria-label="Close" >
+                <button type="button" id="navClose" class="close btn p-0 " aria-label="Close" >
                     <span aria-hidden="true" style="font-size: 2em">&times;</span>
                 </button>
             </div>
