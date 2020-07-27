@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{%  block head %}
+    <title>Index</title>
+{% endblock %}
+
+{% block header %}
+    <nav class="sticky-top">
+        <img class="float-right img-fluid p-4 p-md-2 mb-0 mb-md-n5" id="logo" src="{{ url_for('static',filename='img/poli_logo_poli.png') }}">
+        <header id="header" class="container-fluid text-white p-3 p-sm-3 p-md-4 pl-sm-4 pl-md-5 ">
+            <h1 class="xxlargeToMedium pt-4">Ricerca per argomento</h1>
+            <form action="/" method="POST" class="py-2 mx-auto">
+                <div class="input-group row no-gutters">
+                    <input type="search" id="searchText" name="searchText"  class="form-control p-2 col col-sm-8 col-md-8 col-lg-6" placeholder="Cerca" aria-label="Cerca" aria-describedby="searchButton">
+                    <div class="input-group-append col col-auto">
+                        <button class="btn btn-primaryPoli btn-outline-secondaryPoli" type="submit" id="searchButton"><i class=" fas fa-search text-white"></i></button>
+                    </div>
+                </div>
+            </form>
+        </header>
+    </nav>
+{% endblock %}
+
+{%  block body %}
+    {#    TODO: Testing sidebar#}
+    <div class="wrapper bg-light">
+        <!-- Page Content -->
+        <div id="content" class="px-3 px-md-5 pt-3 pt-md-4 col-md-12 col-lg-7 col-xl-8" >
+            <span>3 Risultati (0.02 secondi)</span>
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+            {% for i in range(5) %}
+                <article class="card mt-3">
+                    <div class="card-body">
+
+
+                        <img class="float-right card-img img-responsive" style="width: 200px" src="{{ url_for('static',filename='img/database.jpg') }}">
+                        <h4 class="card-title">Basi di Dati</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">
+                            In informatica, il termine database, in italiano base di dati o banca dati (a volte abbreviato con la sigla DB), indica un insieme organizzato di dati. Le informazioni contenute in un database sono strutturate e collegate tra loro secondo un particolare modello logico scelto dal progettista del database (ad es. relazionale, gerarchico, reticolare o a oggetti). Gli utenti si interfacciano con i database attraverso i cosiddetti query language (query di ricerca o interrogazione, inserimento, cancellazione, aggiornamento ecc.) e grazie a particolari applicazioni software dedicati (DBMS).
+                        </p>
+                        <h6 class="card-title">Videolezioni</h6>
+                        <article class="row justify-content-center p-md-2">
+                            <button type="button" class="col-auto col-md-auto  btn p-0 " aria-label="Close" >
+                                <span aria-hidden="true" style="font-size: 2em"><i class="fa fa-chevron-left" ></i></span>
+                            </button>
+                            <div class="p-0 m-0 col card-group card-group-scroll d-flex" >
+                                {% for i in range(25) %}
+                                    <div class="card border-0 p-2 ">
+                                        <a href="#" class = "position-relative text-white">
+                                            <img class="card-img-top border" src="{{ url_for('static',filename='img/lessonImgPlaceholder.jpg') }}" alt="Immagine Lezione">
+                                            <div class="card-img-overlay  d-flex align-items-end flex-column-reverse p-0 " style="height: inherit">
+                                                <div class="bg-dark p-1 px-2 rounded"><i class=" fas fa-play text-white"></i> <span class="font-weight-bolder" >25:20</span></div>
+                                            </div>
+
+                                            <div class="card-img-overlay opacity-0h4  bg-dark d-flex flex-row " style="height: inherit">
+
+                                                <div class="align-self-center mx-auto " style="font-size: 4rem; " ><i class="fas fa-play-circle" ></i></div>
+                                            </div>
+                                        </a>
+                                        <div class="card-body px-1 pt-2">
+                                            <a href="#" ><h6 class="card-title">2015 - Lezione 1</h6></a>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+
+                            <button type="button" class="col-auto col-md-auto btn  p-0 " aria-label="Close" >
+                                <span aria-hidden="true" style="font-size: 2em"><i class="fa fa-chevron-right" ></i></span>
+                            </button>
+                            {#                            <a href="#" class="card-link">Card link</a>#}
+                            {#                            <a href="#" class="card-link">Another link</a>#}
+
+                        </article>
+
+
+
+                    </div>
+                </article>
+            {% endfor %}
+
+
+            {{ result }}
+        </div>
+
+        <!-- Sidebar -->
+        <nav id="sidebar" class="shadow bg-white col-md-12 col-lg-5 col-xl-4">
+            {#            <button type="button" class="close btn p-2" aria-label="Close" >#}
+            {#                <span aria-hidden="true" style="font-size: 1.4em">&times;</span>#}
+            {#            </button>#}
+
+            <div class="d-block">
+                <button type="button" class="close btn p-0 " aria-label="Close" >
+                    <span aria-hidden="true" style="font-size: 2em">&times;</span>
+                </button>
+            </div>
+            <div class="container py-4 py-lg-3 mt-4">
+
+                <h4>2015 - Lezione 1 <small class="text-muted bold">del 01/10/2014</small></h4>
+                <ul class="list_container text-muted">
+                    <li class="list_item">Introduzione alle basi di dati</li>
+                </ul>
+                <div class="card text-white">
+                    <img class="card-img border " src="{{ url_for('static',filename='img/lessonImgPlaceholder.jpg') }}">
+
+                    <div class="card-img-overlay  d-flex align-items-end flex-column-reverse p-0 " style="height: inherit">
+                        <div class="bg-dark p-1 px-2 rounded"><i class=" fas fa-play text-white"></i> <span class="font-weight-bolder" >25:20</span></div>
+                    </div>
+
+                    <div class="card-img-overlay opacity-0h4  bg-dark d-flex " style="height: inherit">
+
+                        <div class="align-self-center mx-auto " style="font-size: 4rem; " ><i class="fas fa-play-circle text-white" ></i></div>
+                    </div>
+
+                </div>
+                <blockquote class="blockquote my-3 text-center">
+                    <p>
+                        […]
+                        <em> ok adesso vorrei parlarvi brevemente di cos'è un sistema di gestione di basi dati e come funziona </em>
+                        […]
+                    </p>
+                </blockquote>
+                <div class="row p-4">
+
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-primary btn-lg  p-2 px-5">Riproduci <i class=" fas fa-play text-white"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+
+    </div>
+
+
+
+    {##}
+    {##}
+    {#    <div class="row">#}
+    {##}
+    {#        <div class="overflow-auto px-3 px-md-5 pt-3 pt-md-4 col-md-12 col-lg-7 col-xl-8" style=" background-color: #00A7AA">#}
+    {#            <span>3 Risultati (0.02 secondi)</span>#}
+    {##}
+    {#            {% for i in range(1) %}#}
+    {#                <div class="card mt-3">#}
+    {#                    <div class="card-body">#}
+    {##}
+    {#                        <img class="float-right card-img img-responsive" style="width: 200px" src="{{ url_for('static',filename='img/database.jpg') }}">#}
+    {#                        <h4 class="card-title">Basi di Dati</h4>#}
+    {#                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>#}
+    {#                        <p class="card-text">#}
+    {#                            In informatica, il termine database, in italiano base di dati o banca dati (a volte abbreviato con la sigla DB), indica un insieme organizzato di dati. Le informazioni contenute in un database sono strutturate e collegate tra loro secondo un particolare modello logico scelto dal progettista del database (ad es. relazionale, gerarchico, reticolare o a oggetti). Gli utenti si interfacciano con i database attraverso i cosiddetti query language (query di ricerca o interrogazione, inserimento, cancellazione, aggiornamento ecc.) e grazie a particolari applicazioni software dedicati (DBMS).#}
+    {#                        </p>#}
+    {#                        <h6 class="card-title">Videolezioni</h6>#}
+    {##}
+    {#                        <a href="#" class="card-link">Card link</a>#}
+    {#                        <a href="#" class="card-link">Another link</a>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            {% endfor %}#}
+    {##}
+    {##}
+    {#            {{ result }}#}
+    {#        </div>#}
+    {#                        <div class="col-md-12 col-lg-5 col-xl-4" style="background-color: #5A5CAD">#}
+    {#                            Pannello argomento#}
+    {#                        </div>#}
+    {##}
+    {#    </div>#}
+
+
+
+
+
+{% endblock %}
