@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
 
     <link rel="stylesheet" href="{{ url_for('static',filename='scss/customBootstrap.css') }}">
-{#    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">#}
-{#    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">#}
+
+    <!-- OverlayScrollbars CSS -->
+    <link type="text/css" href="{{ url_for('static', filename='css/OverlayScrollbars.css') }}" rel="stylesheet"/>
+    {#    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">#}
+    {#    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">#}
 
     {{ fontawesome_html() }}
 
@@ -42,8 +45,8 @@
 <script src="{{ url_for('static',filename='js/vendor/bootstrap.min.js') }}" ></script>
 <!-- Popper.JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<!-- jQuery Custom Scroller CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Plugin JS -->
+<script type="text/javascript" src="{{ url_for('static',filename='js/jquery.overlayScrollbars.js') }}"></script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

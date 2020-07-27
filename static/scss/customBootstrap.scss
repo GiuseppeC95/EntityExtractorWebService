@@ -95,11 +95,26 @@ header {
 
 
 /*--------------LESSON LIST----------------*/
-.card-group.card-group-scroll {
-  overflow-x: auto;
+
+
+.customScroll{
+
   overflow-y: hidden;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  overflow-x: auto;
+
+
+  .card-group.card-group-scroll.defaultScrollStartup {
+    overflow-x: auto;
+    //overflow-y: hidden;
+  }
+  .card-group.card-group-scroll {
+    display: flex;
+    width: 100%;
+    //overflow-x: auto;
+    //overflow-y: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 /*-----------------------------------------*/
