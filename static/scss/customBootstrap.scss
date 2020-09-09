@@ -17,7 +17,6 @@ $enable-responsive-font-sizes: true;
 /*// Extra small devices (portrait phones, less than 576px)*/
 /*// No media query for `xs` since this is the default in Bootstrap*/
 
-
 header {
   background-color:$bgcolor;
   border-bottom-style: solid;
@@ -111,6 +110,7 @@ header {
   .card-group.card-group-scroll {
     display: flex;
     width: 100%;
+
     //overflow-x: auto;
     //overflow-y: hidden;
     flex-direction: row;
@@ -118,6 +118,13 @@ header {
   }
 }
 
+/*-----------------------------------------*/
+
+/*--------------LESSON ITEM----------------*/
+.lessonItem{
+  max-width: 33%;
+
+}
 /*-----------------------------------------*/
 //
 //.largeToMedium {
@@ -312,9 +319,9 @@ header {
 
 .card-group.card-group-scroll > .card {
 
-
+  //flex-basis: auto;
   @include media-breakpoint-down(md){
-    flex-grow:1;
+    flex-grow:0;
     flex-shrink: 0;
     flex-basis: 33%;
   }
@@ -324,4 +331,8 @@ header {
   @include media-breakpoint-up(xl){
     flex-basis: 20%;
   }
+}
+
+html{
+  background-color: $light;
 }

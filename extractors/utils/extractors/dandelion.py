@@ -19,8 +19,10 @@ class DANDELION(object):
         self.recognition = False
 
     def extract(self, text, extractors="entities,topics", lang="fr", min_confidence=0.0):
+        #FIXME: Se si rimuove la lingua, Dandelion riconosce automaticamente la lingua a partire dal testo
         self.lang = lang
         self.text = text
+        ## RIMOSSO param
         params = {"lang": lang, "text": text, "token": self.token, "min_confidence": str(min_confidence)}
         response = requests.post('https://' + self.endpoint + '/datatxt/nex/v1', params=params)
         try:

@@ -1,0 +1,323 @@
+{
+  "_comment": "Voglio avere un JSON con risultati ordinati per score (pertinenza). \n La URI è la fonte delle informazioni principali dell'argomento, da cui si estraggono la maggior parte delle entità.\n Label, Description(ui riportata come shortDescr), Abstract (riportata qui come description).\n L'URL dell'immagine è estratto dalla proprietà image di wikidata (preferibile).\n Il timecode è definito nel formato SMPTE.\n Entity tokens contiene l'indice dei token da evidenziare all'interno dello speechTokensArray.",
+  "elapsedTime": "0.02",
+  "result": [
+    {
+      "label": "Basi di dati",
+      "shortDescr": "collezione di basi di dati",
+      "description": "Con base di dati o banca dati (a volte abbreviato con la sigla DB dall'inglese database) in informatica si indica un insieme di dati strutturati ovvero omogeneo per contenuti e formato, memorizzati in un computer, rappresentando di fatto la versione digitale di un archivio dati o schedario.",
+      "uri": "https://www.wikidata.org/entity/Q8513",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Database.svg/170px-Database.svg.png",
+      "VideoOccurrences": [
+        {
+          "Lesson": {
+            "id": "toChooseDependingOnDBStructure",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 1",
+            "videoUrl": "static/video/01   Introduzione.mp4",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:05:20:15",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Database Management System (DBMS)",
+      "short descr": "",
+      "description": "In informatica, un Database Management System, abbreviato in DBMS o Sistema di gestione di basi di dati, è un sistema software progettato per consentire la creazione, la manipolazione e l'interrogazione efficiente di database, per questo detto anche \"gestore o motore del database\", è ospitato su architettura hardware dedicata oppure su semplice computer. La teoria dei database e dei DBMS rappresenta da sempre uno dei filoni più solidi e importanti dell'informatica.",
+      "uri": "https://www.wikidata.org/entity/Q176165",
+      "imageUrl": "",
+      "VideoOccurrences": [
+        {
+          "Lesson": {
+            "id": "toChooseDependingOnDBStructure",
+            "description": "Introduzione alle basi di dati",
+            "videoUrl": "static/video/01   Introduzione.mp4",
+            "name": "Lezione 1",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:05:20:15",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        },
+        {
+          "Lesson": {
+            "id": "toChooependingDBStructure",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 2",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:18:20:23",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        },
+        {
+          "Lesson": {
+            "id": "toChoosfeDependinnDBStrudfture",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 2",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "01:18:20:14",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        },
+        {
+          "Lesson": {
+            "id": "toChooseDendingOnDBucture",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 2",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:01:10:08",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        },
+        {
+          "Lesson": {
+            "id": "toChooseDendingOnDBucture",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 2",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:01:10:08",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        },
+        {
+          "Lesson": {
+            "id": "toChooseDendingOnDBucture",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 4",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:01:10:08",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        },
+        {
+          "Lesson": {
+            "id": "toChooseDendingOnDBucture",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 2",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:01:10:08",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        },
+        {
+          "Lesson": {
+            "id": "toChooseDendingOnDBucture",
+            "description": "Introduzione alle basi di dati",
+            "name": "Lezione 2",
+            "date": "2014-10-01"
+          },
+          "imgUrl": "http://placehold.it/1280x720",
+          "timecode": "00:01:10:08",
+          "entityTokens": [
+            12,
+            13
+          ],
+          "speechTokenArray": [
+            "ok",
+            "adesso",
+            "vorrei",
+            "parlarvi",
+            "brevemente",
+            "di",
+            "cos'è",
+            "un",
+            "sistema",
+            "di",
+            "gestione",
+            "di",
+            "basi",
+            "dati",
+            "e",
+            "come",
+            "funziona"
+          ]
+        }
+      ]
+    }
+  ]
+}
